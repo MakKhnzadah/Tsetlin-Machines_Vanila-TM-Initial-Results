@@ -1,0 +1,32 @@
+{
+  "metrics": {
+    "accuracy": 0.5125,
+    "precision": 0.5160462130937099,
+    "recall": 0.402,
+    "f1": 0.45193929173693087
+  },
+  "clause_inspection": {
+    "available": true,
+    "classes": 2,
+    "state_shapes": [
+      [
+        [
+          100
+        ],
+        [
+          100000
+        ]
+      ],
+      [
+        [
+          100
+        ],
+        [
+          100000
+        ]
+      ]
+    ],
+    "negated_literals_enabled": true,
+    "note": "The model was created with append_negated=True. The second state array per class contains the automata states used to learn included positive and negated literals."
+  }
+}
