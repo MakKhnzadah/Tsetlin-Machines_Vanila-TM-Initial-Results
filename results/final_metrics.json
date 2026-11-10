@@ -1,9 +1,9 @@
 {
   "metrics": {
-    "accuracy": 0.5125,
-    "precision": 0.5160462130937099,
-    "recall": 0.402,
-    "f1": 0.45193929173693087
+    "accuracy": 0.52475,
+    "precision": 0.5239014968614196,
+    "recall": 0.5425,
+    "f1": 0.5330385654630312
   },
   "clause_inspection": {
     "available": true,

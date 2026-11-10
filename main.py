@@ -157,7 +157,8 @@ def run_experiment(
     model = MultiClassTsetlinMachine(number_of_clauses=100, T=15, s=1.0, append_negated=True)
     history: list[dict[str, float | int]] = []
     for epoch in range(1, epochs + 1):
-        model.fit(train_pairs, train_targets, epochs=1)
+        # Continue training the same model rather than resetting it each epoch.
+        model.fit(train_pairs, train_targets, epochs=1, incremental=True)
         train_metrics = evaluate(model, train_pairs, train_targets)
         test_metrics = evaluate(model, test_pairs, test_targets)
         history.append(
